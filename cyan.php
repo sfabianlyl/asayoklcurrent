@@ -96,7 +96,7 @@
 
         
 
-        $subject="Young Adult Network ASAYOKL"; 
+        $subject="Catholic Young Adult Network ASAYOKL"; 
         $message="<h1>Thank You for Registering!</h1>";
         $message.="<p>Terima kasih atas pendaftaran anda. Kami akan menghubungi anda melalui e-mel atau telefon (Whatsapp).";
         $message.="<br>[Thank you for your registration. We will contact you via email or phone (Whatsapp).]</p>";
@@ -153,7 +153,7 @@
 
 
 <div class="mb-5">
-    <h3 class="text-center">Young Adult Network</h3>
+    <h3 class="text-center">Catholic Young Adult Network</h3>
     <p class="text-center"><i>Join us according to your location convenience.</i></p>
 </div>
 
