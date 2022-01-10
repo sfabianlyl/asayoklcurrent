@@ -224,7 +224,7 @@
                 
                 $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
                 try {
-                    $mail->SMTPDebug = 1;                                 // Enable verbose debug output
+                    $mail->SMTPDebug = 0;                                 // Enable verbose debug output
                     $mail->isSMTP();                                      // Set mailer to use SMTP
                     $mail->Host = 'mail.catholicyouth.my';                  // Specify main and backup SMTP servers
                     $mail->SMTPAuth = true;                               // Enable SMTP authentication
@@ -332,7 +332,7 @@
                 $mail->Host = 'mail.catholicyouth.my';                  // Specify main and backup SMTP servers
                 $mail->SMTPAuth = true;                               // Enable SMTP authentication
                 $mail->Username = 'noreply@catholicyouth.my';       // SMTP username
-                $mail->Password = '4ZykA3GcM7mS';                           // SMTP password
+                $mail->Password = 'FOWo9nqkijlk';                           // SMTP password
             // $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
                 $mail->Port = 26;                                    // TCP port to connect to
                 $mail->SMTPOptions = array(
