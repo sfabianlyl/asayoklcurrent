@@ -33,7 +33,7 @@
     ];
 
     $nextSessions=[
-        "KL"=>"May 2021"
+        "KL"=>"Jan 2022"
     ]
 
 ?>
@@ -104,7 +104,7 @@
         $message.="<br><p><b>Network: $location</b></p>";
         
         $message.="<p><b>Nama (Name): </b>$name</p>";
-        $message.="<p><b>Umur (Age): </b>$age</p>";
+        $message.="<p><b>Tahun Lahir (Year of Birth): </b>$age</p>";
         $message.="<p><b>Jantina (Gender): </b>$gender</p>";
         $message.="<p><b>Kewarganegaraan (Nationality): </b>$nationality</p>";
         $message.="<p><b>No. Telefon (Mobile No.): </b>$phone</p>";
