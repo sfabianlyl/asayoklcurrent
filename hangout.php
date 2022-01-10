@@ -288,7 +288,8 @@
                         'values' => $values
                     ]);
                     $result = $sheets->spreadsheets_values->append($spreadsheetId, $range, $body,['valueInputOption' => 'RAW']);
-                    $datePart=explode("/",$date);
+                    $temp=explode("@",$date);
+                    $datePart=explode("/",$temp[0]);
                     $day=$datePart[0];
                     $month=$datePart[1];
                     $str=date("d/m/Y - g:ia",strtotime("$month/$day 8.45pm"));
