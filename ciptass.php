@@ -120,7 +120,7 @@
             $mail->Host = 'mail.catholicyouth.my';                  // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
             $mail->Username = 'noreply@catholicyouth.my';       // SMTP username
-            $mail->Password = '4ZykA3GcM7mS';                           // SMTP password
+            $mail->Password = 'Wo5fjiCx6gQG';                           // SMTP password
         // $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 26;                                    // TCP port to connect to
             $mail->SMTPOptions = array(
