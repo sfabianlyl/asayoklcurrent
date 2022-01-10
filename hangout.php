@@ -79,12 +79,12 @@
     $ycs2="Youth and Campus Students (BM/Eng) $ycsVal2"; 
     $ycsStr2=date("d/m/Y - g:ia",$ycsTime2);
     
-    $klnTime=strtotime("November 8th 8.30pm"); 
+    $klnTime=strtotime("January 25th 8.30pm"); 
     $klnVal=date("j/n",$klnTime);
     $kln="KL North $klnVal"; 
     $klnStr=date("d/m/Y - g:ia",$klnTime);
     
-    $petalingTime=strtotime("November 8th 8.30pm"); 
+    $petalingTime=strtotime("January 28th 8.30pm"); 
     $petalingVal=date("j/n",$petalingTime);
     $petaling="Petaling $petalingVal"; 
     $petalingStr=date("d/m/Y - g:ia",$petalingTime);
@@ -698,10 +698,10 @@
                             <div class="row">
                                 <div class="col-4">KL North</div>
                                 <div class="col-8">
-                                    <label><input type="checkbox" name="language[]" value="<?=$kln?>@Mandarin"> Mandarin, <?=$klnStr?> </label><br>
-                                    <label><input type="checkbox" name="language[]" value="<?=$kln?>@BM"> BM, <?=$klnStr?> </label><br>
-                                    <label><input type="checkbox" name="language[]" value="<?=$kln?>@Tamil"> Tamil, <?=$klnStr?> </label><br>
-                                    <label><input type="checkbox" name="language[]" value="<?=$kln?>@English"> English, <?=$klnStr?> </label><br>
+                                    <label><input type="radio" name="language[]" value="<?=$kln?>@Mandarin"> Mandarin, <?=$klnStr?> </label><br>
+                                    <label><input type="radio" name="language[]" value="<?=$kln?>@BM"> BM, <?=$klnStr?> </label><br>
+                                    <label><input type="radio" name="language[]" value="<?=$kln?>@Tamil"> Tamil, <?=$klnStr?> </label><br>
+                                    <label><input type="radio" name="language[]" value="<?=$kln?>@English"> English, <?=$klnStr?> </label><br>
 
             
                                 </div>
@@ -711,10 +711,10 @@
                             <div class="row">
                                 <div class="col-4">Petaling District</div>
                                 <div class="col-8">
-                                    <label><input type="checkbox" name="language[]" value="<?=$petaling?>@Mandarin"> Mandarin, <?=$petalingStr?></label><br>
-                                    <label><input type="checkbox" name="language[]" value="<?=$petaling?>@BM"> BM, <?=$petalingStr?></label><br>
-                                    <label><input type="checkbox" name="language[]" value="<?=$petaling?>@Tamil"> Tamil, <?=$petalingStr?></label><br>
-                                    <label><input type="checkbox" name="language[]" value="<?=$petaling?>@English"> English, <?=$petalingStr?></label><br>
+                                    <label><input type="radio" name="language[]" value="<?=$petaling?>@Mandarin"> Mandarin, <?=$petalingStr?></label><br>
+                                    <label><input type="radio" name="language[]" value="<?=$petaling?>@BM"> BM, <?=$petalingStr?></label><br>
+                                    <label><input type="radio" name="language[]" value="<?=$petaling?>@Tamil"> Tamil, <?=$petalingStr?></label><br>
+                                    <label><input type="radio" name="language[]" value="<?=$petaling?>@English"> English, <?=$petalingStr?></label><br>
                                 </div>
                             </div>
                         </div>
