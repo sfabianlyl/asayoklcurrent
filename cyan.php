@@ -110,6 +110,8 @@
         $message.="<p><b>No. Telefon (Mobile No.): </b>$phone</p>";
         $message.="<p><b>E-mel (Email): </b>$email</p>";
         
+        $message.="<p>In the meantime, do join our <a href='https://t.me/asayoklcyan' target='_blank'>Telegram Channel</a> to receive updates on our monthly gatherings.</p>";
+        
         $message.="<p>Thank you</p>";
         $message.="<p><b><i><font color='red'>This is a no reply email. Please do not reply to this email.</font></i></b></p>";
 
@@ -231,12 +233,10 @@
                 </div>
             </div>
             <div class="row mb-5 align-items-center">
-                <div class="col-4">Umur (Age)</div>
+                <div class="col-4">Tahun Lahir (Year of Birth)</div>
                 <div class="col-8">
-                    <label><input type="radio" name="age" value="18 - 21" checked>18 - 21 tahun (18 - 21 years old)</label><br>
-                    <label><input type="radio" name="age" value="22 - 24">22 - 24 tahun (22 - 24 years old)</label><br>
-                    <label><input type="radio" name="age" value="25 - 29">25 - 29 tahun (25 - 29 years old)</label><br>
-                    <label><input type="radio" name="age" value="30 - 34">30 - 34 tahun (30 - 34 years old)</label>
+                    <label><input type="text" class="form-control" name="age" ></label>
+                    
                 </div>
             </div>
             <div class="row mb-5 align-items-center">
