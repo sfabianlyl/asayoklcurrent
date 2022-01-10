@@ -219,7 +219,9 @@
                 $header="MIME-Version: 1.0" . "\r\n";
                 $header.="Content-type: multipart/related; boundary='emailsectionseparator'; type='text/html'" . "\r\n";
                 $header.="From: {noreply@catholicyouth.my}";
-    
+                
+                
+                
                 $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
                 try {
                     $mail->SMTPDebug = 1;                                 // Enable verbose debug output
