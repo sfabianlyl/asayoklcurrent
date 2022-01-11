@@ -257,44 +257,37 @@
         }else{
             $languages=$_POST["language"];
             foreach($languages as $language){
-                $sql="SELECT * from `hangouts` where `email`='$email' and `language`='$language';";
-                $result=$conn->query($sql);
-                if($row=$result->fetch_assoc()){
-                    
-                }else{
-                    $sql="INSERT INTO `hangouts` (`language`,`name`,`age`,`gender`,`email`,`phone`,`parish`,`diocese`,`nationality`) values ('$language','$name','$age','$gender','$email','$phone','$parish','$diocese','$nationality');";
-                    $conn->query($sql);
-                    $parts=explode(" ",$language);
-                    $date=array_pop($parts);
-                    $lang=implode(" ",$parts);
-                    $range = "$lang!A1:G";
-                    $rows = $sheets->spreadsheets_values->get($spreadsheetId, $range, ['majorDimension' => 'ROWS']);
-                    $count=count($rows['values']);
-                    $data=[];
-                    $data[]=$count;
-                    $data[]=$date;
-                    $data[]=$nationality;
-                    $data[]=$name;
-                    $data[]=$age;
-                    $data[]=$gender;
-                    $data[]=$email;
-                    $data[]=$phone;
-                    $data[]=$diocese;
-                    $data[]=$parish;
-                    
-                    $values=array($data);
                 
-                    $body = new Google_Service_Sheets_ValueRange([
-                        'values' => $values
-                    ]);
-                    $result = $sheets->spreadsheets_values->append($spreadsheetId, $range, $body,['valueInputOption' => 'RAW']);
-                    $temp=explode("@",$date);
-                    $datePart=explode("/",$temp[0]);
-                    $day=$datePart[0];
-                    $month=$datePart[1];
-                    $str=date("d/m/Y - g:ia",strtotime("$month/$day 8.45pm"));
-                    $sessions[]="$lang @ $str";
-                }
+                $parts=explode(" ",$language);
+                $date=array_pop($parts);
+                $lang=implode(" ",$parts);
+                $range = "$lang!A1:G";
+                $rows = $sheets->spreadsheets_values->get($spreadsheetId, $range, ['majorDimension' => 'ROWS']);
+                $count=count($rows['values']);
+                $data=[];
+                $data[]=$count;
+                $data[]=$date;
+                $data[]=$nationality;
+                $data[]=$name;
+                $data[]=$age;
+                $data[]=$gender;
+                $data[]=$email;
+                $data[]=$phone;
+                $data[]=$diocese;
+                $data[]=$parish;
+                
+                $values=array($data);
+            
+                $body = new Google_Service_Sheets_ValueRange([
+                    'values' => $values
+                ]);
+                $result = $sheets->spreadsheets_values->append($spreadsheetId, $range, $body,['valueInputOption' => 'RAW']);
+                $temp=explode("@",$date);
+                $datePart=explode("/",$temp[0]);
+                $day=$datePart[0];
+                $month=$datePart[1];
+                $str=date("d/m/Y - g:ia",strtotime("$month/$day 8.45pm"));
+                $sessions[]="$lang @ $str";
             }
             if(isset($sessions)){
             $subject="Online Hangout with ASAYOKL"; 
