@@ -272,7 +272,7 @@
                 $data[]=$age;
                 $data[]=$gender;
                 $data[]=$email;
-                $data[]=$phone;
+                $data[]=($phone[0]=="+")?$phone:"+6".$phone;
                 $data[]=$diocese;
                 $data[]=$parish;
                 
@@ -756,7 +756,9 @@
                 <div class="row mb-5 align-items-center">
                     <div class="col-4">No. Telefon (Phone Number)</div>
                     <div class="col-8">
-                        <input type="text" name="phone" class="form-control" value="+6" required>
+                        <div class="d-flex">
+                            <span>+6</span>
+                            <div style="flex:1;"><input type="text" name="phone" class="form-control" value="" required></div>
                     </div>
                 </div>
                 <div class="row mb-5 align-items-center">
