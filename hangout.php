@@ -780,6 +780,7 @@
                     <div class="col-8">
                         <input type="text" name="parish" id="parishOthers" class="form-control" style="display:none;" disabled>
                         <select id="parishKL" class="form-control" name="parish" required>
+                            <option hidden disabled selected value> -- Please Select -- </option>
                             <option value="Cathedral of St John">Cathedral of St John - 5 Jalan Bukit Nanas, 50250 Kuala Lumpur</option>
                             <option value="Church of Holy Rosary">Church of Holy Rosary - 10 Jalan Tun Sambanthan, 50470 Kuala Lumpur</option>
                             <option value="Church of St Anthony">Church of St Anthony - 5 Jalan Robertson, off Jalan Pudu, 50150 Kuala Lumpur</option>
@@ -891,6 +892,14 @@
             _oldShow.apply(obj, [speed, newCallback]);
         });
         }
+    });
+    $("input[type='radio'][name='program']").on("change",function(){
+        $("#scriptureDates, #taizeDates, #youngAdultDates, #youthCampusDates, #allSoulsDates, #IRLDates, #gameDates, #KLNDates, #PetalingDates").css("display","none");
+        $("input[type='radio'][name='language']").attr("disabled","");
+        var idDates="#"+$(this).val()+"Dates";
+        var idInput=idDates+" input";
+        $(idDates).css("display","block");
+        $(idInput).removeAttr("disabled");
     });
     $(".hangout-radio").on("click",function(){
         if($(this).val()=="IRL"){

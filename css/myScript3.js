@@ -532,14 +532,7 @@ $(document).ready(function(){
         $(".rog .active").parent().css({opacity:1});
     });
     
-    $("input[type='radio'][name='program']").on("change",function(){
-        $("#scriptureDates, #taizeDates, #youngAdultDates, #youthCampusDates, #allSoulsDates, #IRLDates, #gameDates, #KLNDates").css("display","none");
-        $("input[type='radio'][name='language']").attr("disabled","");
-        var idDates="#"+$(this).val()+"Dates";
-        var idInput=idDates+" input";
-        $(idDates).css("display","block");
-        $(idInput).removeAttr("disabled");
-    })
+    
 
     $("input[type='radio'][name='program'][value='scripture']").attr("checked","");
     $("input[type='radio'][name='location'][value='KL']").attr("checked","");
