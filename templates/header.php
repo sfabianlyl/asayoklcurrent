@@ -60,7 +60,6 @@
                 <br>
                 <a href="youth-campus">Butiran <i>(Details)</i></a>
                 <a href="checkin">Check In</a>
-                <a href="hangout#youthCampus">Hangout: Youth & Campus</a>
                 <a href="lnl">Love & Life</a>
                 <a href="ciptass">CIPTASS</a>
             </div>
@@ -69,7 +68,6 @@
                 <br>
                 <a href="young-adult">Butiran <i>(Details)</i></a>
                 <a href="checkin">Check In</a>
-                <a href="hangout#youngAdult">Hangout: Young Adult</a>
                 <a href="cyan">Catholic Young Adults Network</a>
                 <a href="s2s">Sinners 2 Saints</a>
             </div>
@@ -82,9 +80,9 @@
             <div class="col-12 col-lg-6 mb-4">
                 <h4>Programmes & Events For All<i>(Program & Acara Untuk Semua)</i></h4>
                 <br>
+                <a href="hangout">Hangout</a>
                 <a href="pestakami">Pesta K.A.M.I.</a>
                 <a href="kamikudus">K.A.M.I. KUDUS</a>
-                <a href="hangout">Hangout: Scripture</a>
                 <a href="reachout">Reach Out Grant</a>
                 <a href="aypa">AYPA 2019</a>
             </div>
