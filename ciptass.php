@@ -19,7 +19,7 @@
 
     $tentative=[
         "Terengganu"=>"September"
-    ]
+    ];
 
 ?>
 
