@@ -950,7 +950,7 @@
         }
     });
     $("input[type='radio'][name='program']").on("change",function(){
-        $("#scriptureDates, #taizeDates, #youngAdultDates, #youthCampusDates, #allSoulsDates, #IRLDates, #gameDates, #KLNDates, #PetalingDates").css("display","none");
+        $("#scriptureDates, #taizeDates, #youngAdultDates, #youthCampusDates, #allSoulsDates, #IRLDates, #gameDates, #KLNDates, #PetalingDates, #KLCDates, #PTDates").css("display","none");
         $("input[type='radio'][name='language']").attr("disabled","");
         var idDates="#"+$(this).val()+"Dates";
         var idInput=idDates+" input";
