@@ -88,6 +88,16 @@
     $petalingVal=date("j/n",$petalingTime);
     $petaling="Petaling $petalingVal"; 
     $petalingStr=date("d/m/Y - g:ia",$petalingTime);
+
+    $ptTime=strtotime("February 22nd 8.30pm"); 
+    $ptVal=date("j/n",$ptTime);
+    $pt="Pahang Terengganu $ptVal"; 
+    $ptStr=date("d/m/Y - g:ia",$ptTime);
+    
+    $klcTime=strtotime("February 25th 8.30pm"); 
+    $klcVal=date("j/n",$klcTime);
+    $klc="Petaling $klcVal"; 
+    $klcStr=date("d/m/Y - g:ia",$klcTime);
     
 
     // $taizeTime=strtotime("August 30th 8.00pm");
@@ -533,7 +543,26 @@
                             </label>
                         </div>
                     </div>
-                    
+                    <div class="row justify-content-center">
+                        <!-- <div class="col-10 col-lg-5">
+                            <label>
+                                <input class="hangout-radio" type="radio" name="program" value="IRL" required>
+                                <div><img src="Images/hangout_irl.png" class="w-100"></div>
+                            </label>
+                        </div> -->
+                        <div class="col-10 col-lg-5">
+                            <label>
+                                <input class="hangout-radio" type="radio" name="program" value="PT" required>
+                                <div><img src="Images/hangout_pt.png" class="w-100"></div>
+                            </label>
+                        </div>
+                        <div class="col-10 col-lg-5">
+                            <label>
+                                <input class="hangout-radio" type="radio" name="program" value="KLC" required>
+                                <div><img src="Images/hangout_klc.png" class="w-100"></div>
+                            </label>
+                        </div>
+                    </div>
                     
                 </div>
             </div>
@@ -709,6 +738,30 @@
                                     <label><input type="radio" name="language[]" value="<?=$petaling?>@BM"> BM, <?=$petalingStr?></label><br>
                                     <label><input type="radio" name="language[]" value="<?=$petaling?>@Tamil"> Tamil, <?=$petalingStr?></label><br>
                                     <label><input type="radio" name="language[]" value="<?=$petaling?>@English"> English, <?=$petalingStr?></label><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="KLCDates" style="display:none;">
+                            <div class="row">
+                                <div class="col-4">KL Central</div>
+                                <div class="col-8">
+                                    <label><input type="radio" name="language[]" value="<?=$klc?>@Mandarin"> Mandarin, <?=$klcStr?> </label><br>
+                                    <label><input type="radio" name="language[]" value="<?=$klc?>@BM"> BM, <?=$klcStr?> </label><br>
+                                    <label><input type="radio" name="language[]" value="<?=$klc?>@Tamil"> Tamil, <?=$klcStr?> </label><br>
+                                    <label><input type="radio" name="language[]" value="<?=$klc?>@English"> English, <?=$klcStr?> </label><br>
+
+            
+                                </div>
+                            </div>
+                        </div>
+                        <div id="PTDates" style="display:none;">
+                            <div class="row">
+                                <div class="col-4">Pahang-Terengganu District</div>
+                                <div class="col-8">
+                                    <label><input type="radio" name="language[]" value="<?=$pt?>@Mandarin"> Mandarin, <?=$ptStr?></label><br>
+                                    <label><input type="radio" name="language[]" value="<?=$pt?>@BM"> BM, <?=$ptStr?></label><br>
+                                    <label><input type="radio" name="language[]" value="<?=$pt?>@Tamil"> Tamil, <?=$ptStr?></label><br>
+                                    <label><input type="radio" name="language[]" value="<?=$pt?>@English"> English, <?=$ptStr?></label><br>
                                 </div>
                             </div>
                         </div>
