@@ -4,6 +4,7 @@
     require 'vendor/autoload.php';
     $panel=false;
     include 'templates/header.php';
+    include 'email.php';
     date_default_timezone_set ("Asia/Kuala_Lumpur");
 ?>
 
@@ -90,10 +91,10 @@
         try {
             $mail->SMTPDebug = 0;                                 // Enable verbose debug output
             $mail->isSMTP();                                      // Set mailer to use SMTP
-            $mail->Host = 'mail.catholicyouth.my';                  // Specify main and backup SMTP servers
+            $mail->Host = $email_host;                  // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
-            $mail->Username = 'noreply@catholicyouth.my';       // SMTP username
-            $mail->Password = 'Gcgv_Zm,hJiR';                           // SMTP password
+            $mail->Username = $email_user;       // SMTP username
+            $mail->Password = $email_pw;                           // SMTP password
         // $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 26;                                    // TCP port to connect to
             $mail->SMTPOptions = array(
@@ -104,7 +105,7 @@
                 )
             );
         //Recipients
-            $mail->setFrom('noreply@catholicyouth.my', 'ASAYO KL');
+            $mail->setFrom($email_user, $email_name);
             $mail->addAddress($email);
 
         //Content
