@@ -99,6 +99,10 @@
     $klc="Petaling $klcVal"; 
     $klcStr=date("d/m/Y - g:ia",$klcTime);
     
+    $tamTime=strtotime("February 21st 8.30pm"); 
+    $tamVal=date("j/n",$tamTime);
+    $tam="Hangout Tamil $tamVal"; 
+    $tamStr=date("d/m/Y - g:ia",$tamTime);
 
     // $taizeTime=strtotime("August 30th 8.00pm");
     // $taizeVal=date("j/n",$taizeTime);
@@ -563,6 +567,21 @@
                             </label>
                         </div>
                     </div>
+                    <div class="row justify-content-center">
+                        <!-- <div class="col-10 col-lg-5">
+                            <label>
+                                <input class="hangout-radio" type="radio" name="program" value="IRL" required>
+                                <div><img src="Images/hangout_irl.png" class="w-100"></div>
+                            </label>
+                        </div> -->
+                        <div class="col-10 col-lg-5">
+                            <label>
+                                <input class="hangout-radio" type="radio" name="program" value="Tamil" required>
+                                <div><img src="Images/hangout_tamil.png" class="w-100"></div>
+                            </label>
+                        </div>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -765,6 +784,14 @@
                                 </div>
                             </div>
                         </div>
+                        <div id="TamilDates" style="display:none;">
+                            <div class="row">
+                                <div class="col-4">Hangout: Tamil</div>
+                                <div class="col-8">
+                                    <label><input type="radio" name="language[]" value="<?=$tam?>"> <?=$tamStr?> </label><br>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row mb-5 align-items-center">
@@ -950,7 +977,7 @@
         }
     });
     $("input[type='radio'][name='program']").on("change",function(){
-        $("#scriptureDates, #taizeDates, #youngAdultDates, #youthCampusDates, #allSoulsDates, #IRLDates, #gameDates, #KLNDates, #PetalingDates, #KLCDates, #PTDates").css("display","none");
+        $("#scriptureDates, #taizeDates, #youngAdultDates, #youthCampusDates, #allSoulsDates, #IRLDates, #gameDates, #KLNDates, #PetalingDates, #KLCDates, #PTDates, #TamilDates").css("display","none");
         $("input[type='radio'][name='language']").attr("disabled","");
         var idDates="#"+$(this).val()+"Dates";
         var idInput=idDates+" input";
