@@ -530,7 +530,7 @@
                                 <div><img src="Images/hangout_irl.png" class="w-100"></div>
                             </label>
                         </div> -->
-                        <div class="col-10 col-lg-5">
+                        <!-- <div class="col-10 col-lg-5">
                             <label>
                                 <input class="hangout-radio" type="radio" name="program" value="KLN" required>
                                 <div><img src="Images/hangout_kln.png" class="w-100"></div>
@@ -541,7 +541,7 @@
                                 <input class="hangout-radio" type="radio" name="program" value="Petaling" required>
                                 <div><img src="Images/hangout_petaling.png" class="w-100"></div>
                             </label>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="row justify-content-center">
                         <!-- <div class="col-10 col-lg-5">
