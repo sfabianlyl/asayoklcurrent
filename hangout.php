@@ -97,7 +97,7 @@
     
     $klcTime=strtotime("February 25th 8.30pm"); 
     $klcVal=date("j/n",$klcTime);
-    $klc="Petaling $klcVal"; 
+    $klc="KL Central $klcVal"; 
     $klcStr=date("d/m/Y - g:ia",$klcTime);
     
     $tamTime=strtotime("February 21st 8.30pm"); 
