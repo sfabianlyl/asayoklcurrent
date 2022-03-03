@@ -1,3 +1,4 @@
 /vendor
 error_log
 email.php
+/temp_upload
